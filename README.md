@@ -1,17 +1,18 @@
-# DSA Journey — Aman | DTU ECE
+# DSA Journey — Aman Dagar | DTU ECE
 
-Documenting my complete DSA preparation from scratch.
-**Started:** [your start date]
-**Target:** NeetCode 150 (Python) + Codeforces 1200+ rating (C++)
+ECE student at Delhi Technological University teaching myself DSA and Competitive Programming from scratch alongside my core branch.
+
+**Started:** May 2026
+**Goal:** NeetCode 150 (Python) + Codeforces 1200+ rating (C++)
 
 ---
 
 ## Progress
 
-| Platform | Problems Solved | Current Streak |
+| Platform | Problems Solved | Status |
 |---|---|---|
-| LeetCode (NeetCode 150) | 0 / 150 | 0 days |
-| Codeforces | 0 | 0 days |
+| LeetCode (NeetCode 150) | 0 / 150 | 🟡 In Progress |
+| Codeforces | 0 | 🟡 In Progress |
 
 > Update this table weekly.
 
@@ -22,20 +23,10 @@ Documenting my complete DSA preparation from scratch.
 ```
 DSA-Journey/
 │
-├── leetcode/                  ← NeetCode 150 problems in Python (auto-synced)
-│   ├── arrays/
-│   ├── strings/
-│   ├── linked-lists/
-│   ├── recursion/
-│   ├── binary-search/
-│   ├── stacks-queues/
-│   ├── trees/
-│   ├── graphs/
-│   ├── dp/
-│   ├── two-pointers/
-│   └── sliding-window/
+├── leetcode/          ← Auto-synced by LeetHub 3.0 Chrome extension
+│                         Pushes every accepted solution instantly
 │
-├── competitive-programming/   ← Codeforces problems in C++
+├── competitive-programming/   ← Codeforces solutions in C++
 │   ├── 800/
 │   ├── 900/
 │   ├── 1000/
@@ -43,23 +34,42 @@ DSA-Journey/
 │   ├── 1200/
 │   └── 1300/
 │
-├── notes/                     ← Concepts, patterns, revision notes
+├── notes/             ← Concept notes, patterns, revision
 │
 └── scripts/
-    ├── cf_commit.sh           ← Quick commit for Codeforces solutions
-    └── push.sh                ← Universal push script
+    ├── cf_commit.sh   ← One command to push any CF solution
+    └── push.sh        ← General purpose quick push
+```
+
+---
+
+## How LeetCode Works
+
+LeetHub 3.0 Chrome extension handles everything automatically.
+Solve a problem on LeetCode → get accepted → it pushes to this repo instantly.
+Zero manual effort required.
+
+---
+
+## How Codeforces Works
+
+1. Solve a problem on codeforces.com
+2. Save your solution file:
+   `competitive-programming/<rating>/<problemID_name>.cpp`
+3. Run from Terminal:
+```bash
+cd ~/Desktop/DSA-Journey
+./scripts/cf_commit.sh <rating> <problemID> "<problem name>"
+```
+
+Example:
+```bash
+./scripts/cf_commit.sh 800 1A "theatre square"
 ```
 
 ---
 
 ## File Naming Convention
-
-**LeetCode (Python):**
-```
-0001_two_sum.py
-0020_valid_parentheses.py
-0121_best_time_to_buy_stock.py
-```
 
 **Codeforces (C++):**
 ```
@@ -70,35 +80,13 @@ DSA-Journey/
 
 ---
 
-## How LeetCode Auto-Sync Works
-
-This repo uses a GitHub Action that runs every night at 11:30 PM IST.
-It automatically pulls all accepted LeetCode submissions and commits them
-to the `leetcode/` folder. Zero manual effort needed after setup.
-
----
-
-## How to Commit a Codeforces Solution
-
-1. Write your solution in the right folder, e.g.:
-   `competitive-programming/800/1A_theatre_square.cpp`
-
-2. Run:
-   ```bash
-   ./scripts/cf_commit.sh 800 1A "theatre square"
-   ```
-
-3. Done. Committed and pushed automatically.
-
----
-
 ## Resources
 
-- [NeetCode 150](https://neetcode.io/practice) — interview problems
-- [Striver's A2Z Sheet](https://takeuforward.org/strivers-a2z-dsa-course) — deep DSA
+- [NeetCode 150](https://neetcode.io/practice) — interview prep
 - [Codeforces](https://codeforces.com) — competitive programming
+- [Striver's A2Z Sheet](https://takeuforward.org) — deep DSA reference
 - [CP-Algorithms](https://cp-algorithms.com) — algorithm reference
 
 ---
 
-*"1221 days. That's Edward Nathan Varghese's Codeforces streak. Day 1 starts today."*
+*Started from scratch. ECE student. Building in public.*
